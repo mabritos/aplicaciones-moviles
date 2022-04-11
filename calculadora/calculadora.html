@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, height=device-height"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="calculadora.css" />
+    <title>Calculadora</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="display">
+        <input id="input-display" disabled />
+        <div id="icons">
+          <a onclick="deleteLast()">
+            <span class="material-icons"> &#xe14a; </span>
+          </a>
+        </div>
+      </div>
+      <hr />
+      <div id="keyboard">
+        <div class="row">
+          <button class="red" onclick="clearDisplay()">C</button>
+          <button class="green">()</button>
+          <button class="green" onclick="numberClick('%')" value="%">%</button>
+          <button class="green" onclick="numberClick('/')" value="/">/</button>
+        </div>
+        <div class="row">
+          <button onclick="numberClick('7')" value="7">7</button>
+          <button onclick="numberClick('8')" value="8">8</button>
+          <button onclick="numberClick('9')" value="9">9</button>
+          <button class="green" onclick="numberClick('*')" value="*">X</button>
+        </div>
+        <div class="row">
+          <button onclick="numberClick('4')" value="4">4</button>
+          <button onclick="numberClick('5')" value="5">5</button>
+          <button onclick="numberClick('6')" value="6">6</button>
+          <button class="green" onclick="numberClick('-')" value="-">-</button>
+        </div>
+        <div class="row">
+          <button onclick="numberClick('1')" value="1">1</button>
+          <button onclick="numberClick('2')" value="2">2</button>
+          <button onclick="numberClick('3')" value="3">3</button>
+          <button class="green" onclick="numberClick('+')" value="+">+</button>
+        </div>
+        <div class="row">
+          <button>+/-</button>
+          <button onclick="numberClick('0')" value="0">0</button>
+          <button onclick="numberClick('.')" value=".">.</button>
+          <button class="green-back" onclick="calculate()">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="calculadora.js"></script>
+</html>
