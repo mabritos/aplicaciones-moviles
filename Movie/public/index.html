@@ -5,15 +5,34 @@
     <title>Movie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height" />
     <link rel="stylesheet" href="styles.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <div class="container">
         <header>
-            <h1>Movie</h1>
+            <div class="heading">
+                <h1>Movie</h1>
+            </div>
+
         </header>
-        <div class="content">
-            <button onclick="getMovies()">Cargar Películas</button>
+        <div class="content row">
+            <div class="cinema-container row">
+                <div class="col-sm-3 cinema"><button onclick="getMovies('Movie Montevideo')">Montevideo</button></div>
+                <div class="col-sm-3 cinema"><button onclick="getMovies('Movie Portones')">Portones</button></div>
+                <div class="col-sm-3 cinema"><button onclick="getMovies('Movie Nuevocentro')">Nuevo Centro</button>
+                </div>
+                <div class="col-sm-3 cinema"><button onclick="getMovies('Movie Punta Carretas')">Punta Carretas</button>
+                </div>
+            </div>
+            <!-- <button onclick="getMovies()">Cargar Películas</button> -->
             <div id="billboard"></div>
         </div>
         <footer></footer>
