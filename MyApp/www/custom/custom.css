@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+* {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.heading {
+    text-align: center;
+}
+
+.cinema {
+    justify-content: center;
+}
